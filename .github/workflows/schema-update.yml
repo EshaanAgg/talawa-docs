@@ -4,7 +4,8 @@ on:
   schedule:
     - cron: "0 0 * * 0" # Run at midnight on Sunday every week
   workflow_dispatch:
-
+  push:
+    branches: [docss]
 jobs:
   Schema_Update:
     runs-on: ubuntu-latest
